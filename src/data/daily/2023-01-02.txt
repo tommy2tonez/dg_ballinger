@@ -1,0 +1,1 @@
+{"queryCount":0,"resultsCount":0,"adjusted":true,"status":"OK","request_id":"42416a67c2baf2d9c6840d27e9e2a347"}

@@ -1,0 +1,28 @@
+transformer optimizable objectives: (keep input, output - twist transformer - 30K rep/model - feed to NN - tune)
++ activation functions (https://arxiv.org/pdf/2402.09092), list = [Serf, SinSig, mish, hard_swish, Flattened-T swish, RSigELUD, RSigELU, AReLU, swish, ChPAF, LPAF, GELU, Gish, Phish, puaf, app_sq_relu, E-swish, PSGU, FALU, PDELU, SReLU, blu, DisReLU], keyword = "popular", "outperform", "nvidia"
++ attn proj_sz + head_sz of q,k,v 
++ rotation ratio
++ layer norm technique 
+
+data optimizable objectives: (keep transformer - twist input, output - 30K rep/config - applicable evaluators - feed to NN - tune)
++ 512 bits tokenization (like BERT)
++ huffman compression ratio (alphabet size - propotional to training sz), int_suffix_encoding alphabet (propotional to training sz)
++ seq_len/context_len (row_size/column_size) ratio
++ input_entropy/output_entropy ratio  
++ high-resolution environment tickers + low-resolution environment tickers (increase input entropy by pooling but same context dimension cos sim - positional + general - fair_randomizer -> sort)  
++ add world exchanges (other than U.S.) 
++ decrease output entropy w.r.t input by adjusting training objective + resolution + render_rate
++ add logic data to increase logical reasoning
++ eval data (solved when inc inp entropy)
++ improved focal point (same codec) - ticker's trait is uniformly distributed across it's lifespan, improved focal == improved trait-extraction by "random" pooling + improved prediction by recent movements
+
+comprehensive objectives: (pick top transformers, top data configs - 30K rep/transformer_config - applicable evaluators - feed to NN - tune)
+
+best NLP input = lossless compression using categorical + relative positional information 
+in case of time-series = positional injective or element injective function
+percentage can be categorized by using exponential grouping or evenly-spaced discrete grouping
+in former case, diff_percentage (loss in lossy) = sum(i..j) * base_exp
+in latter_case, diff_percentage (loss in lossy) = unit_space 
+
+amazon approach, a.k.a chronos = bucket sorting (the case of element injective function + evenly-spaced discrete grouping)
+doge approach, a.k.a ballinger = positional injective + exponential grouping

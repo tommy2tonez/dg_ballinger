@@ -2,7 +2,8 @@ transformer optimizable objectives: (keep input, output - twist transformer - 30
 + activation functions (https://arxiv.org/pdf/2402.09092), list = [Serf, SinSig, mish, hard_swish, Flattened-T swish, RSigELUD, RSigELU, AReLU, swish, ChPAF, LPAF, GELU, Gish, Phish, puaf, app_sq_relu, E-swish, PSGU, FALU, PDELU, SReLU, blu, DisReLU], keyword = "popular", "outperform", "nvidia"
 + attn proj_sz + head_sz of q,k,v 
 + rotation ratio
-+ layer norm technique 
++ layer norm technique
++ centrality + two sum (as in two summary) (this) 
 
 data optimizable objectives: (keep transformer - twist input, output - 30K rep/config - applicable evaluators - feed to NN - tune)
 + 512 bits tokenization (like BERT)
@@ -14,7 +15,7 @@ data optimizable objectives: (keep transformer - twist input, output - 30K rep/c
 + decrease output entropy w.r.t input by adjusting training objective + resolution + render_rate
 + add logic data to increase logical reasoning
 + eval data (solved when inc inp entropy)
-+ improved focal point (same codec) - ticker's trait is uniformly distributed across it's lifespan, improved focal == improved trait-extraction by "random" pooling + improved prediction by recent movements
++ improved focal point (same codec) - ticker's trait is uniformly distributed across it's lifetime, improved focal == improved trait-extraction by "random" pooling + improved prediction by recent movements (this)
 
 comprehensive objectives: (pick top transformers, top data configs - 30K rep/transformer_config - applicable evaluators - feed to NN - tune)
 

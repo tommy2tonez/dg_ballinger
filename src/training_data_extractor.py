@@ -6,6 +6,41 @@ import database_api
 import cache
 from typing import Optional
 
+#we'd want to improve this
+
+#let's see the 30 strings that made up the stock movement:
+
+#the previous movements (the ticker's history) string
+#trait string
+#nationality string
+#sector string (DFEN | NRGU)
+#market string (SPY)
+#mood string
+#fundamental string
+#peer (entity resolution) string (empathy string) by doing graph search of connected entities (we extract the maybe related entities as env_ticker_list: list[list[str]] and feed to the neural network)
+#random string
+#rational string
+#catalyst string
+#illegal string (pump and dump)
+#unprecended string (hype string)
+#option string (available contract)
+#window of validation string, new trends in 2024 have to be different than that of 1993
+#the conservation of money string (this is probably very important), and their growth
+
+#let's see what we could do
+#traits extraction by using focal points, problem, we'd want to move the focal to exactly to where the trait repeats
+#without loss of generality, we'd want to uniformly split a time window [a, b], for exponentially increasing b
+#calls/ puts chart (this is hard to collect)
+#rational decisions (cant afford to go off a cliff, repeat history, has to have some Big News, too many people on the line) 
+#illegal activities (pump and dump, money laundering, etc.)
+
+#empathy string establishment by using graph hops (entity resolution) for env tickers
+#we'd want to include that in the training data input and output
+
+#Fear/ Greed/ Mood by doing sampling of news
+
+#Fundamental strings, essentially, we'd want to include/ compress every fundamental chart inside the input/output result
+
 class StateEmbeddingConfig:
     is_shared_env_ticker_vocab: bool 
 
@@ -16,7 +51,7 @@ class StateEmbeddingConfig:
     ticker_fundamental_window_in_year: int
     ticker_fundamental_resolution: int 
     ticker_fundamental_compression_option: str
-    
+
     env_window_in_year: int 
     env_resolution: int 
     env_compression_option: str

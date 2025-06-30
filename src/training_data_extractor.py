@@ -27,6 +27,11 @@ from typing import Optional
 #window of validation string, new trends in 2024 have to be different than that of 1993
 #the conservation of money string (this is probably very important), and their growth
 
+#the problem is not the training data, but training criteria
+#so we are not "input-output" being "historical-forecast" but rather "historical-forecast-profit", strategy data is only allowed to be previous the validation window
+#we'd want to randomize the strategy to maximize the profits 
+#see, the problem is that the neural network cannot know the after the strategy moves, so we'd essentially want to actually remake the entire neural network + randomize for literally every randomization move
+
 #let's see what we could do
 #traits extraction by using focal points, problem, we'd want to move the focal to exactly to where the trait repeats
 #without loss of generality, we'd want to uniformly split a time window [a, b], for exponentially increasing b
